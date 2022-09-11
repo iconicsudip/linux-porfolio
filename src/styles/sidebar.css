@@ -1,0 +1,248 @@
+.all{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    height: calc(100% - 5rem);
+    align-items: center;
+    width: 3.5rem;
+    user-select: none;
+    cursor: default;
+    align-content: center;
+    gap: 0.2rem;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+}
+
+.hover-active{
+    padding: 0.4rem;
+    padding-top: 0.4rem;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0);
+}
+.all img{
+    width: 2rem;
+    
+}
+.grid{
+    position: absolute;
+    bottom: 1rem;
+}
+
+.tooltip{
+    position: absolute;
+    display: none;
+    width: 9rem;
+    margin: auto;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 2rem;
+    background-color: rgba(17,17,17,0.7);
+    color: rgba(246,246,245,1);
+    border: 1px solid rgba(156,163,175,0.4);
+    border-radius: 0.45rem;
+    padding: 0.2rem;
+    text-align: center;
+    font-size: .875rem;
+}
+.gridha{
+    position: absolute;
+    bottom: 0.2rem;
+    z-index: 3;
+}
+.gridha img{
+    width: 2rem;
+}
+.application{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    position: absolute;
+    bottom: 0;
+}
+.inside-grid{
+    height: 32px;
+}
+.inside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.activeapp{
+    position: absolute;
+    width: 0.3rem;
+    height: 0.3rem;
+    background: rgba(233,84,32);
+    margin: 1rem;
+    margin-left: -0.4rem;
+    border-radius: 50%;
+    display: none;
+}
+.windows{
+    position: absolute;
+    top: 3rem;
+    left: 4rem;
+}
+.openwindow{
+    position: absolute;
+    cursor: move;
+    color: black;
+    border-radius: 5px;
+    padding: 1em;
+    margin: auto;
+    user-select: none;
+    background: white;
+    display: flex;
+    width: 26.44rem;
+    height: 33rem;
+    border-radius: .5rem;
+    margin: 0px;
+    padding: 0px;
+    flex-direction: column;
+}
+.windowheader{
+    position: absolute;
+    top: 0;
+    width: 25rem;
+    background-color: rgba(32,31,31,1);
+    color: rgba(255,255,255);
+    font-weight: bold;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    text-align: center;
+    padding-top: .375rem;
+    padding-bottom: .375rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+}
+.navigate{
+    width: 6rem;
+    height: 1.9rem;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(32,31,31,1);
+    border-top-right-radius: 0.5rem;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    cursor: default;
+    border-top: 0.5px solid gray;
+}
+.close{
+    background-color: rgba(233,84,32,0.9);
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+}
+.close:hover{
+    background-color: rgba(233,84,32,1);
+}
+.maximize{
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+}
+.maximize:hover{
+    background-color: rgba(255,255,255,0.1);
+}
+.minimize{
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+}
+.minimize:hover{
+    background-color: rgba(255,255,255,0.1);
+}
+.windowbody{
+    margin-top: 2rem;
+    height: 31rem;
+}
+.window-head{
+    background-color: rgba(51,51,51,1);
+}
+.chrome{
+    display: flex;
+    gap: 0.5rem;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    padding-right: 4px;
+    padding-left: 4px;
+    margin-top: -0.1rem;
+}
+.chrome img{
+    width: 1.25rem;
+    
+}
+.chrome input{
+    color: rgba(209,213,219,1);
+    background-color: rgba(17,17,17,1);
+    width: 80%;
+    border-radius: 12px;
+    padding-left: 10px;
+}
+.chrome input:focus{
+    color: rgba(255,255,255,1);
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.refresh{
+    cursor: default;
+}
+
+.home{
+    cursor: default;
+}
+.allapps{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: calc(100% - 2rem);
+    background-color: rgba(0,0,0,0.7);
+}
+.searchbox{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    padding-top: 1.25rem;
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,1);
+    width: 60%;
+    height: 2rem;
+    border-radius: 0.75rem;
+    gap: 0.4rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+.search img{
+    width: 1.25rem;
+}
+.search input{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 75%;
+}

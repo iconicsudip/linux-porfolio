@@ -1,0 +1,40 @@
+.body{
+    height: calc(100vh - 2rem);
+    padding-top: 2rem;
+    background: url(/public/images/wall-2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#contextMenu{
+    display: none;
+    background-color: #2b2b2b;
+    color: rgba(255,255,255,1);
+    font-weight: 300;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-color: rgba(17,24,39,1);
+    width: 13rem;
+    height: 15rem;
+    border-radius: .25rem;
+    border: 0 solid;
+}
+
+.cat{
+    padding-top: .125rem;
+    padding-bottom: .125rem;
+    margin-bottom: .375rem;
+    font-weight: 300;
+}
+.cat span{
+    margin-left: 1.25rem;
+    user-select: none;
+    cursor: default;
+}
+.unselect{
+    color: rgba(156,163,175,1);
+    
+}
+.cat:hover{
+    background-color: rgba(174,167,159,0.2);
+}
